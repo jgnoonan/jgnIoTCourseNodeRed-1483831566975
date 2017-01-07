@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: jgnIoTCourseNodeRed
+  host: jgnIoTCourseNodeRed
+  disk_quota: 1024M
+  services:
+  - jgnIoTCourseNodeRed-cloudantNoSQLDB
+  - jgnIoTCourseNodeRed-iotf-service
+  - availability-monitoring-auto
